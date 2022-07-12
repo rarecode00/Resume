@@ -17,6 +17,7 @@ input, select, textarea{
 /*body header*/
 
 #body-header{
+	width: auto;
 	height: 65vh;
 	background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/25/120534-code-programming-programming_language-JavaScript-colorful-simple_background-wallhaven-minified-syntax_highlighting-748x421.jpg);
 	background-size: cover;
@@ -103,11 +104,12 @@ input, select, textarea{
 /*section*/
 
 section {
-    width: 100%;
+    width: auto;
     /*height: 75vh;*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section:nth-child(2n) {
@@ -376,7 +378,7 @@ section:target{
 	color: lightgrey;
 }
 
-#contact{
+#contact{	
 	display: inline-block;
 }
 
@@ -410,3 +412,122 @@ section:target{
 	color: white;
 }
 
+/*Education*/
+
+
+#education{
+	margin-bottom: 50px;
+}
+
+.timeline{
+	position: relative;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+.timeline-boxes{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	margin: 5px;
+}
+
+.timeline-boxes:nth-child(2n + 1)::after{
+	content: '';
+	position: absolute;
+	height: 0.8rem;
+	width: 0.8rem;
+	border-radius: 50%;
+	top: 18%;
+	right: -13%;
+	background-color: lightgrey;
+	z-index: 1;
+}
+
+.timeline-boxes:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	height: 0.7rem;
+	width: 0.7rem;
+	border-radius: 50%;
+	top: 18%;
+	left: -10%;
+	background-color: lightgrey;
+	z-index: 1;
+}
+
+
+.timeline-boxes:nth-child(2n){
+	left: 53%;
+}
+
+.timeline-divider{
+	position: absolute;
+	height: 68%;
+	width: 0;
+	border: 2px dashed #98d4fd;
+	top: 10%;
+	left: 50%;
+}
+
+.timeline-icon{
+	position: sticky;
+	top: 10%;
+	transform: rotate(90deg);
+}
+
+
+.name1 h3::before{
+	content: '';
+	position: absolute;
+	background-image: url(https://targetstudy.com/files/img/2/11963/L_7536.gif);
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	left: 0%;
+	background-size: contain;
+
+}
+
+.name2 h3::before{
+	content: '';
+	position: absolute;
+	background-image: url(https://sanskareducationalgroup.ac.in/wp-content/uploads/2019/09/logo-seg-trans-1.png);
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	left: 0%;
+	padding: 2px;
+	margin: 2px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+#degree{
+	margin-left: 270px;
+	margin-top: -3px;
+	color: #2b5ab4;
+	font-family: monospace;
+	font-size: 1rem;
+	/*box-shadow: 0.2px 0px 0px 0.2px #2b5ab4;*/
+}
+
+#institute-name{
+	margin-left: 225px;
+	margin-top: -5px;
+	font-family: monospace;
+	color: orange;
+	font-size: 1rem;
+	box-shadow: 4px orange;
+}
+
+#time{
+	margin-left: 280px;
+	margin-top: -14px;
+	font-family: monospace;
+	color: orange;
+	font-size: 1rem;
+}
