@@ -72,6 +72,9 @@ input, select, textarea{
 /*social image*/
 
 #social{
+	position: relative;
+	display: flex;
+	flex-wrap: no-wrap;
 	list-style: none;
 	margin-left: 510px;
 	margin-top: -10px;
@@ -128,6 +131,7 @@ section:target{
     width: auto;
     padding: 20px 10px 10px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .section-heading span {
