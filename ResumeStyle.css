@@ -76,7 +76,7 @@ input, select, textarea{
 	display: flex;
 	flex-wrap: no-wrap;
 	list-style: none;
-	margin-left: 510px;
+	margin-left: 580px;
 	margin-top: -10px;
 }
 
@@ -270,7 +270,7 @@ section:target{
 /*Percentage Classes */
 
 .eighty-five-percent {
-    height: inherit;
+	height: inherit;
     width: 85%;
 }
 
