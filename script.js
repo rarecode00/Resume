@@ -39,16 +39,64 @@ const onClick = function() {
   document.getElementById('contact-nav').onclick = onClick;
 
 
-const Name = document.getElementById('contacter-name');
 
-// SKILLS-SECTION ANIMATION
-
-var list_of_bars = document.querySelectorAll('.skill-progress');
-function set_width_to_zero()
-{
-   alert("one");
-}
-
+  var list_of_bars = document.querySelectorAll('.skill-progress>div');
+  function set_width_to_zero()
+  {
+      for (let bar of list_of_bars) {
+          bar.style.width = "0";
+      }
+  }
+  function in_view(bar)
+  {
+      let element_distance = bar.getBoundingClientRect().top;
+      if (element_distance < window.innerHeight) {
+          return true;
+      }
+      return false;
+  }
+  function fill_bar(bar, percentage)
+  {
+      let count = 0;
+      let id = setInterval(function ()
+      {
+          bar.style.width = count.toString() + "%";
+          if (count++ == percentage) {
+              clearInterval(id);
+          }
+      }, 10)
+  }
+  function is_filled(bar)
+  {
+      if (parseInt(bar.style.width) != 0) {
+          return true;
+      }
+      return false;
+  }
+  function checker_in_view()
+  {
+      for (let bar of list_of_bars) {
+          if (in_view(bar) && !is_filled(bar)) {
+              fill_bar(bar, bar.getAttribute("data-skill-percent"));
+          }
+      }
+  }
+  function again_on_top()
+  {
+      let skills = document.getElementById('skills')
+      let skills_distance = skills.getBoundingClientRect().top;
+      if (skills_distance > window.innerHeight) {
+          set_width_to_zero();
+      }
+  }
+  function listener()
+  {
+      checker_in_view();
+      again_on_top()
+  }
+  
+  set_width_to_zero();
+  window.addEventListener('scroll', listener);
 //Submit-button
 
 const button = document.getElementById('form-button');
