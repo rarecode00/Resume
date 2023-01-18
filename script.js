@@ -1,5 +1,4 @@
 // Navigations => SCROLL DOWN
-alert("Please Open it in Laptop For better view :)");
 var current = 0 , target = 0;
 
 const onClick = function() {
