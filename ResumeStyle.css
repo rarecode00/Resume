@@ -350,6 +350,11 @@ section:target{
     width: 70%;
 }
 
+.sixty-percent {
+    height: inherit;
+    width: 60%;
+}
+
 .fourty-percent {
     height: inherit;
     width: 40%;
