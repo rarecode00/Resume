@@ -2,6 +2,7 @@
 <html>
 <head>
 	<script src="https://kit.fontawesome.com/377c62b438.js" crossorigin = "anonymous"></script>
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-sGOVIJ0rrqL-lixCLokNsW4UeXBfS_4lA&usqp=CAU">
 	<link rel="stylesheet" type="text/css" href="ResumeStyle.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,29 +12,30 @@
 	<header id = "body-header">
 			<nav id = "body-nav">
 				<ul class="horizontal-list text-center">
-					<li><a id = "home-nav">Home</a></li>
-					<li><a id = "about-nav">About</a></li>
-					<li><a id="skill-nav">Skills</a></li>
-					<li><a id="education-nav">Education</a></li>
-					<li><a id="portfolio-nav">Portfolio</a></li>
-					<li><a id="contact-nav">Contact</a></li>
+					<li><a id = "home-nav" class="txt-wgt">Home</a></li>
+					<li><a id = "about-nav" class="txt-wgt">About</a></li>
+					<li><a id="skill-nav" class="txt-wgt">Skills</a></li>
+					<li><a id="education-nav" class="txt-wgt">Education</a></li>
+					<li><a id="portfolio-nav" class="txt-wgt">Portfolio</a></li>
+					<li><a id="contact-nav" class="txt-wgt">Contact</a></li>
 				</ul>
 			</nav>
 
 			<div id = "header-name" class = "text-center">
-			<h1>Krishna Sharma</h1>
+			<p class="MYname">Krishna Sharma</p>
 		   </div>
 
 		   <div id = "social">
-		   	   <a id="facebook" class="social-btn" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
 
-            <a id="linkedin" class="social-btn" target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a id="linkedin" class="social-btn" target="_blank" href="https://www.linkedin.com/in/rarecode/"><i class="fa-brands fa-linkedin-in"></i></a>
 
-            <a id="twitter" class="social-btn" target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a id="twitter" class="social-btn" target="_blank" href="https://codeforces.com/profile/rarecode_00"><i class="fa-solid fa-chart-simple"></i></a>
 
             <a id="gmail" class="social-btn" target="_blank" href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-g"></i></a>
 
             <a id="whatsapp" class="social-btn" target="_blank" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+			
+            <a id="whatsapp" class="social-btn" target="_blank" href="https://github.com/rarecode00"><i class="fa-brands fa-github"></i></a>
 
 
         </div>
@@ -46,24 +48,33 @@
 				<img src="https://cdn.codechef.com/sites/default/files/uploads/pictures/cab27e19c5a8bcb9fbfa7cd0ca83877e.jpg">
 			</div>
 
-			<div>
+			<div id = "about-txt">
 				<p class="text-center about-paragraph">
-				   I am currently enrolled in engineering at AKTU University , aside from that i am passionate about my daily works includes programming .Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work.
+				   I'm currently pursuing engineering at AKTU University, but my true passion lies in programming. Working on coding projects brings me great joy and a sense of purpose. With a deep-rooted passion for programming, I constantly strive to improve my skills and challenge myself. In my previous job, this drive led me to acquire new skills, which helped me excel in my work. My goal is to become a full-stack web developer, with a strong emphasis on problem-solving. Additionally, I also enjoy sports programming.
 				</p>
 			</div>
+		</section>
+
+		<section id="experience">
+			<h1 class = "section-heading mb75px ">
+				<span>
+					<img class = "logo-IMG" src="https://parikshit223933.github.io/Resume-Me/media/experience.png" alt="Logo_IMG">
+				</span>
+				<span class="logo-text"><p>Experience</p></span>
+			</h1>
 		</section>
 
 		<section id = "skills">
 			<h1 class = "section-heading mb75px ">
 				<span>
-					<i class = "fas fa-chalkboard-teacher"></i>
+					<img class = "logo-IMG" src="https://simg.nicepng.com/png/small/197-1975581_innovation-driven-icon-skill-india-poster-presentation.png" alt="Logo_IMG">
 				</span>
-				<span>SKILLS</span>
+				<span class="logo-text"><p>SKILLS</p></span>
 			</h1>
 
 			<div class = "skills-display">
 				<div class = "skill-progress">
-				  <div class = "eighty-five-percent mb-blue">
+				  <div class = "eighty-five-percent mb-red" data-skill-percent="85">
 				  	<div class = "skill-name">
 				  		<span>C++</span>
 				  	</div>
@@ -71,7 +82,7 @@
 				</div>
 
 				<div class = "skill-progress">
-				  <div class = "seventy-percent mb-orange">
+				  <div class = "seventy-percent mb-orange" data-skill-percent="70">
 				  	<div class = "skill-name">
 				  		<span>HTML</span>
 				  	</div>
@@ -79,7 +90,7 @@
 				</div>
 
 				<div class = "skill-progress">
-				  <div class = "fourty-percent mb-teal">
+				  <div class = "fourty-percent mb-teal" data-skill-percent="40">
 				  	<div class = "skill-name">
 				  		<span>CSS</span>
 				  	</div>
@@ -87,7 +98,7 @@
 				</div>
 
 				<div class = "skill-progress">
-				  <div class = "zero-percent mb-light-purple">
+				  <div class = "sixty-percent mb-purple" data-skill-percent="60">
 				  	<div class = "skill-name">
 				  		<span>JavaScript</span>
 				  	</div>
@@ -95,63 +106,126 @@
 				</div>
 
 				<div class = "skill-progress">
-				  <div class = "zero-percent mb-teal">
+				  <div class = "fourty-percent mb-green" data-skill-percent="40">
 				  	<div class = "skill-name">
-				  		<span>NodeJs</span>
+				  		<span>Node Js</span>
 				  	</div>
 				  </div>
 				</div>
 
 				<div class = "skill-progress">
-				  <div class = "zero-percent mb-light-purple">
+				  <div class = "fourty-percent mb-red" data-skill-percent="40">
 				  	<div class = "skill-name">
-				  		<span>MongoDB</span>
+				  		<span>Express Js</span>
 				  	</div>
 				  </div>
 				</div>
-			</div>
 
+				<div class = "skill-progress">
+				  <div class = "seventy-percent mb-orange" data-skill-percent="70">
+				  	<div class = "skill-name">
+				  		<span>React Js</span>
+				  	</div>
+				  </div>
+				</div>
+
+					<div class = "skill-progress">
+					  <div class = "fourty-percent mb-teal" data-skill-percent="40">
+						  <div class = "skill-name">
+							  <span>MongoDB</span>
+						  </div>
+					  </div>
+					</div>
+
+					<div class = "skill-progress">
+						<div class = "fourty-percent mb-purple" data-skill-percent="40">
+							<div class = "skill-name">
+								<span>Bootstrap</span>
+							</div>
+						</div>
+					  </div>
+
+					  <div class = "skill-progress">
+						<div class = "eighty-five-percent mb-red" data-skill-percent="85">
+							<div class = "skill-name">
+								<span>Problem solving</span>
+							</div>
+						</div>
+					  </div>
+
+					</div>
 
 	    </section>
 
 		<section id = "education">
 			<h1 class = "section-heading mb75px ">
 				<span>
-					<i class="fa-solid fa-building-columns"></i>
+			       <img class="edu-logo" src="https://parikshit223933.github.io/Resume-Me/media/education.png" alt="EDU_LOGO">
 				</span>
-				<span>EDUCATION</span>
+				<span class="logo-text .mb-red"><p>Education</p></span>
 			</h1>
 
 			<div class= "timeline">
-
 		        <div class="timeline-boxes">
-		        	<div class="name name1">
-		        		<h3 id = "degree">High School</h3>
-		        		<p id = "institute-name">L.N PUBLIC SCHOOL</p>
-		        		<p id = "time">Year-2017</p>		        		
-		        	</div>
-		        </div>
+					<div class="timeline-arrangement">
+						<img class = "even-img" src="https://sanskareducationalgroup.ac.in/wp-content/uploads/2019/09/logo-seg-1.jpg" alt="college_logo">
+					</div>
+					<span class="even-des">
+						<div class = "course">B.Tech -CSE</div>
+						<div class = "institute">Sanskar Educational group</div>
+						<div class = "time">Aug 2019 - Currently</div>
+					</span>
 
-		        <div class="timeline-boxes">
-		        	<div class="name name1">
-		        		<h3 id = "degree">Intermediate</h3>
-		        		<p id = "institute-name">L.N PUBLIC SCHOOL</p>
-		        		<p id = "time">Year-2019</p>
-		        	</div>
-		        </div>
+					<div class="edu-about">
+						Currently, an undergraduate student at Sanskar educational group, Ghaziabad, India. I am currently Pursuing B.Tech from computer science engineering, being currently in fourth year.
+					</div>
+				</div>
 
+				<div class="timeline-boxes">
+					<div class="timeline-arrangement">
+						<img class = "even-cn" src="https://parikshit223933.github.io/Resume-Me/media/coding_ninjas.png" alt="college_logo">
+					</div>
+					<span class="even-des">
+						<div class = "course">DS and Algos. in C++</div>
+						<div class = "institute">Coding Ninjas</div>
+						<div class = "time">Jan 2022 - May 2022</div>
+					</span>
 
-		        <div class="timeline-boxes">
-		        	<div class="name name2">
-		        		<h3 id = "degree">B.TECH(CSE)</h3>
-		        		<p id = "institute-name">Sanskar college of Engineering</p>
-		        		<p id = "time">year-2023</p>
-		        	</div>
-		        </div>
+					<div class="edu-about">
+						Studied the basics of C++, got familiar with OOPS in C++, and various important searching and sorting algorithms, Recursion, Basics of Pointers, Dynamic Programming, Arrays, Time and Space Complexity, Linked Lists, Stacks, Queues, Trees, BSTs, BTs, Hashmaps, Priority Queues, Graphs, Tries and Huffman Coding.					</div>
+				</div>
+
+				<div class="timeline-boxes">
+					<div class="timeline-arrangement">
+						<img class = "even-cn" src="https://parikshit223933.github.io/Resume-Me/media/coding_ninjas.png" alt="college_logo">
+					</div>
+					<span class="even-des">
+						<div class = "course">Competitive Programming</div>
+						<div class = "institute">Coding Ninjas</div>
+						<div class = "time">May 2022 - sep 2022</div>
+					</span>
+
+					<div class="edu-about">
+						As a part of this course I learnt many interesting advanced algorithms in C++ and some new coding techniques, and ways to speed up the code using advance algorithms. Bit manipulation, modulo arithmatic, advanced graphs, fenwick tree, DP and Bit masking, Number theory, game theory, and segment tree are some of the many topics I learnt as a part of this course.					</div>
+				</div>
+
+				<div class="timeline-boxes">
+					<div class="timeline-arrangement">
+						<img class = "even-cn" src="https://parikshit223933.github.io/Resume-Me/media/coding_ninjas.png" alt="college_logo">
+					</div>
+					<span class="even-des">
+						<div class = "course">Full Stack Web development with Node Js and Reach Js</div>
+						<div class = "institute">Coding Ninjas</div>
+						<div class = "time">Sep 2022 - Currently</div>
+					</span>
+
+					<div class="edu-about">
+						As a part of this training program, I Studied the concepts of full stack web development, which includes Front end web development as well as back end web development.					</div>
+				</div>
 
 			    <div class = "timeline-divider">
 			    	<div class = "timeline-icon">
-			    		<i class="fa-solid fa-plane"></i>
+			    		<img class = "car-img" src="https://parikshit223933.github.io/Resume-Me/media/car.png" alt="Car_IMG">
 			    	</div>
 			    </div>
 			</div>
@@ -162,37 +236,36 @@
 		<section id = "portfolio">
 			<h1 class="section-heading">
 				<span>
-					<i class="fa-solid fa-list"></i>
+					<img src="https://parikshit223933.github.io/Resume-Me/media/portfolio.png" alt="Portfolio_logo" class="edu-logo">
 				</span>
-				<span>PORTFOLIO</span>
+				<span class="logo-text"><p>Projects</p></span>
 			</h1>
 
-			<div class = "project-images">
-				<span class = "img-container">
-				<img class = "image" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-				</span>
+			<div id = "project-container">
+				<div class = "project-1">
+					<h1 class="project-heading">Front End Web Development</h1>
+					<ol>
+						<li><a class="project-inner-text" href="https://rarecode00.github.io/TODO-LIST/" target="_blank">TODO-LIST</a></li>
+					    <li><a target= "_blank" class ="project-inner-text" href="https://rarecode00.github.io/Javascript/">PING-PONG</a></li>
+						<li><a target="_blank" class="project-inner-text" href="https://rarecode00.github.io/Stopwatch/">STOPWATCH</a></li>
+					</ol>
+				</div>
+				<div class = "project-2">
+					<h1 class="project-heading">React Js Projects</h1>
+					<ol>
+					  <li><a class="project-inner-text" target="_blank" href="https://rarecode00.github.io/React-Ipod/">REACT-IPOD Application with Firebase storage</a></li>
+					  <li><a class="project-inner-text" target="_blank" href="https://rarecode00.github.io/TextUtils/">TEXTUTILS Application for text operations</a></li>
+					</ol>
+				</div>
+				<div class = "project-3">
+					<h1 class="project-heading">Back End Web Development</h1>
+					<ol>
+						<li><a target="_blank" class="project-inner-text" href="https://github.com/rarecode00/TODO">TODO-LIST Using MongoDB and Express Js</a></li>
+					</ol>
+				</div>
+			</div>
 
-				<span class = "img-container">	
-				<img class = "image" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-				</span>
-
-				<span class = "img-container">	
-				<img class = "image" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-				</span>
-
-				<span class = "img-container">	
-				<img class = "image" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
-				</span>
-
-				<span class = "img-container">	
-				<img class = "image" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
-				</span>
-
-				<span class = "img-container">	
-				<img class = "image" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
-				</span>
-
-			</div>			
+			
 		</section>
 
 		<section id = "contact">
@@ -211,8 +284,8 @@
 
 			 <div class = "contact1">
 			 	 <form class="contact-form">
-			 	 	 <input type="text" name="Name" placeholder="Your Name" required>
-			 	 	 <input type="mail" name="email" placeholder="Your Email" required>
+			 	 	 <input id="contacter-name" type="text" name="Name" placeholder="Your Name" required>
+			 	 	 <input type="mail" name="email" placeholder="Your Email">
 			 	 	<textarea id = "contact-area" name="textarea" rows="4" cols="14" placeholder="Message"></textarea>
 			 	 	 <button id = "form-button" type = "submit"><span>Send Message</span></button>
 			 	 </form>
@@ -239,7 +312,7 @@
 			 	 	<div>
 			 	 		<div class="address">
 			 	 			<i class="fa-solid fa-phone"></i>
-			 	 			<span>81XXXXXXXX</span>
+			 	 			<span>8171841691</span>
 			 	 		</div>
 			 	 	</div>
 
