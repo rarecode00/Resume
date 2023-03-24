@@ -2,7 +2,6 @@
 var current = 0 , target = 0;
 
 const onClick = function() {
-    // console.log(this.id, this.innerHTML);
     if(this.id == 'home-nav'){
         target = 0;
     }else if(this.id == 'about-nav'){
